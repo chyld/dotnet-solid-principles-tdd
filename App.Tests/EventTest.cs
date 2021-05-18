@@ -1,6 +1,5 @@
 using System;
 using Xunit;
-using System.Collections.Generic;
 using FluentAssertions;
 
 namespace App.Tests
@@ -21,7 +20,7 @@ namespace App.Tests
                     "DESCRIPTION:My birthday party\n" +
                     "END:VEVENT\n";
 
-            event1.iCalendar().Should().Be(expected);
+            event1.iCalendar.Should().Be(expected);
         }
 
         [Fact]

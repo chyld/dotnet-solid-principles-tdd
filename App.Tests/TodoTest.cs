@@ -17,7 +17,7 @@ namespace App.Tests
                     "SUMMARY:Do stuff\n" +
                     "END:VTODO\n";
 
-            todo1.iCalendar().Should().Be(expected);
+            todo1.iCalendar.Should().Be(expected);
         }
 
         [Fact]
@@ -34,8 +34,8 @@ namespace App.Tests
         [Fact]
         public void itHasADescription() {
             Todo todo1 = new Todo("Do stuff", "Alex", "Hamilton", "alex@example.com", "Treasurer");
-            todo1.setDescription("There's a million things he hasn't done");
-            todo1.getDescription().Should().Be("There's a million things he hasn't done");
+            todo1.Description = "There's a million things he hasn't done";
+            todo1.Description.Should().Be("There's a million things he hasn't done");
         }
     }
 }

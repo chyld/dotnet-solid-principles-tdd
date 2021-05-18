@@ -1,15 +1,10 @@
-using System;
-
 namespace App
 {
     public interface ICompletable
     {
-        string getTextToDisplay();
-
+        string TextToDisplay { get; }
+        bool isComplete { get; }
         void markComplete();
-
         void markIncomplete();
-
-        bool isComplete();
     }
 }

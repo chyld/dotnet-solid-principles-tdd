@@ -1,4 +1,3 @@
-using System;
 using System.Text;
 using System.Linq;
 using System.Collections.Generic;
@@ -17,33 +16,29 @@ namespace App
             return completables;
         }
 
-        public List<ICompletable> completed() {
-            return completables.Where(c => c.isComplete()).ToList();
-        }
+        public List<ICompletable> completed() =>
+            completables.Where(c => c.isComplete).ToList();
 
-        public List<ICompletable> uncompleted() {
-            return completables.Where(c => !c.isComplete()).ToList();
-        }
+        public List<ICompletable> uncompleted() => 
+            completables.Where(c => !c.isComplete).ToList();
 
-        public void completeAll() {
+        public void completeAll() =>
             completables.ForEach(c => c.markComplete());
-        }
 
-        public void uncompleteAll() {
+        public void uncompleteAll() =>
             completables.ForEach(c => c.markIncomplete());
-        }
 
         public override string ToString() {
             StringBuilder builder = new StringBuilder();
 
             completables.ForEach(completable => {
-                if (completable.isComplete()) {
+                if (completable.isComplete) {
                     builder.Append("√ ");
                 } else {
                     builder.Append("□ ");
                 }
 
-                builder.Append(completable.getTextToDisplay()).Append("\n");
+                builder.Append(completable.TextToDisplay).Append("\n");
             });
 
             return builder.ToString();

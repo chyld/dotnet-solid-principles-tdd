@@ -1,5 +1,4 @@
 using System;
-using System.Text;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -13,18 +12,15 @@ namespace App
             schedulables.Add(schedulable);
             this.schedulables = schedulables.OrderBy(s => getLocalDateTime(s)).ToList();
         }
-
-        public List<CalendarItem> items() {
-            return schedulables;
-        }
+        public List<CalendarItem> items() => schedulables;
 
         public List<DateTime?> dates() {
             return schedulables.Select(s => getLocalDateTime(s)).ToList();
         }
 
-        public List<string> descriptionsFor(DateTime date) {
-            return schedulables.Where(s => getLocalDateTime(s).Value.Date == date).Select(s => s.ToString()).ToList();
-        }
+        public List<string> descriptionsFor(DateTime date) => 
+            schedulables.Where(s => getLocalDateTime(s).Value.Date == date).Select(s => s.ToString()).ToList();
+        
 
         public DateTime? getFirstDateTime() {
             if (schedulables.Count == 0) return null;
@@ -48,9 +44,9 @@ namespace App
             var isReminder = typeof(Reminder).IsInstanceOfType(item);
 
             if (isEvent) {
-                return ((Event)item).getStartsAt();
+                return ((Event)item).StartsAt;
             } else if (isReminder) {
-                return ((Reminder)item).getRemindsAt();
+                return ((Reminder)item).RemindsAt;
             }
 
             return null;

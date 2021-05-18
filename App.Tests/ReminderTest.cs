@@ -20,7 +20,7 @@ namespace App.Tests
                     "DESCRIPTION:Buy birthday hats\n" +
                     "END:VALARM\n";
 
-            reminder1.iCalendar().Should().Be(expected);
+            reminder1.iCalendar.Should().Be(expected);
         }
 
         [Fact]
