@@ -6,7 +6,7 @@ You just joined a team where all the previous developers just left. The applicat
 
 The domain looks like this:
 
-![solid checkpoint domain](https://github.com/gSchool/tmo-solid/blob/master/images/solid-checkpoint-domain.png?raw=true)
+![solid checkpoint domain](./images/solid-checkpoint-domain.png?raw=true)
 
 Your new Product Owner tells you that users and previous developers have reported a number of problems, and it's your job to fix them using SOLID principles to guide your changes.
 
@@ -218,7 +218,7 @@ The Single Responsibility Principle violation appears in the highlighted part of
 <details>
   <summary>Click to reveal image</summary>
   
-  ![](https://github.com/gSchool/tmo-solid/blob/master/images/solid-checkpoint-srp.png?raw=true)
+  ![](./images/solid-checkpoint-srp.png?raw=true)
 </details>
 
 ### OCP
@@ -228,7 +228,7 @@ The Open/Closed Principle violation appears in the highlighted part of the domai
 <details>
   <summary>Click to reveal image</summary>
   
-  ![](https://github.com/gSchool/tmo-solid/blob/master/images/solid-checkpoint-ocp.png?raw=true)
+  ![](./images/solid-checkpoint-ocp.png?raw=true)
 </details>
 
 ### LSP
@@ -238,7 +238,7 @@ The Liskov Substitution Principle violation appears in the highlighted part of t
 <details>
   <summary>Click to reveal image</summary>
   
-  ![](https://github.com/gSchool/tmo-solid/blob/master/images/solid-checkpoint-lsp.png?raw=true)
+  ![](./images/solid-checkpoint-lsp.png?raw=true)
 </details>
 
 ### ISP
@@ -248,7 +248,7 @@ The Interface Segregation Principle violation appears in the highlighted part of
 <details>
   <summary>Click to reveal image</summary>
   
-  ![](https://github.com/gSchool/tmo-solid/blob/master/images/solid-checkpoint-isp.png?raw=true)
+  ![](./images/solid-checkpoint-isp.png?raw=true)
 </details>
 
 ### DIP
@@ -258,6 +258,6 @@ The Dependency Inversion Principle violation appears in the highlighted part of 
 <details>
   <summary>Click to reveal image</summary>
   
-  ![](https://github.com/gSchool/tmo-solid/blob/master/images/solid-checkpoint-dip.png?raw=true)
+  ![](./images/solid-checkpoint-dip.png?raw=true)
 </details>
 
